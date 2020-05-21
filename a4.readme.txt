@@ -1,0 +1,27 @@
+/*
+301332589  bpanjait@sfu.ca  Brian Panjaitan
+CMPT 225 Fall 2018
+
+For this assignment, I have used some segments of code from Assignment 2 & 3 and turned them into a header file linkedList.h
+I have also included a second cpp file (linkedList.cpp) that provides the code for the functions that are being used in a4
+
+Functions that I have implemented myself:
+- compareList(linkedList, linkedList)
+- findLargest()
+- removeNode(int)
+- findNum(int)
+
+The other functions that have been used are functions from Assignment 2 & 3 with slight modifications 
+
+How the program works:
+- The program reads the text file and inserts it into 2 seperate lists.
+- Checks if list 1 is empty, if so, returns "None"
+- Checks if list 2 is empty, if so, returns largest number in list 1.
+- If neither is empty, program runs the function compareList(list1, list2)
+- Using a while loop, I retrieve the largest number in list 1 with the function findLargest(). After finding the largest number, I check
+if it exists in list 2. If the largest number in list 1 is also in list 2, I delete the largest number from list 1 and get the next largest
+number.
+- Once the largest number in list 1 that is not in list 2 is found or list 1 is empty, the program returns the largest number or "None" 
+accordingly.
+
+*/
